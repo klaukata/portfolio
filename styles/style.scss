@@ -4,3 +4,44 @@ $darkGreenColor: #9DA4AC;
 $grayColor: #8F7E7C;
 $orangeColor: #BA5514;
 $yellowColor: #DACB0C;
+
+
+$breakpointSM: 576px;
+$breakpointMD: 768px;
+$breakpointLG: 992px;
+
+body {
+    background-color: #1e1e24 !important;
+    font-family: 'IBM Plex Mono', monospace;
+    color: #DECBC9;
+    margin: 0.5em 1em;
+}
+
+@media (min-width: 400px) {
+    body {
+        margin: 0.5em 3em;
+    }
+}
+
+@media (min-width: $breakpointSM) {
+    html {
+        display: table;
+        margin: auto;
+    }
+    body {
+        margin: 0;
+        max-width: 30em;
+    }
+}
+
+@media (min-width: $breakpointMD) {
+    body {
+        max-width: 35em;
+    }
+
+}
+@media (min-width: $breakpointLG) {
+    body {
+        max-width: 40em;
+    }
+}
