@@ -5,17 +5,47 @@ $grayColor: #8F7E7C;
 $orangeColor: #BA5514;
 $yellowColor: #DACB0C;
 
-
 $breakpointSM: 576px;
 $breakpointMD: 768px;
 $breakpointLG: 992px;
 
+.violet { color: $violetColor};
+
+.red {color: $redColor};
+
+.gray {color: $grayColor};
+
+
+.violet {
+    color: $violetColor
+}
 body {
     background-color: #1e1e24 !important;
     font-family: 'IBM Plex Mono', monospace;
     color: #DECBC9;
     margin: 0.5em 1em;
 }
+main, section {
+    margin-bottom: 3em;
+}
+main {
+    height: 100vh;
+}
+
+div#skills-div {
+    h5 {
+        font-size: 1.1em;
+    }
+    ul {
+        padding-left: 0;
+        li {
+            display: inline;
+        }
+    }  
+}
+
+
+
 
 @media (min-width: 400px) {
     body {
