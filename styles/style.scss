@@ -12,6 +12,7 @@ $breakpointLG: 992px;
 
 .violet { color: $violetColor};
 .red {color: $redColor};
+.darkGreen {color: $darkGreenColor};
 .gray {color: $grayColor};
 .orange {color: $orangeColor};
 .yellow {color: $yellowColor};
@@ -40,6 +41,7 @@ a:hover {transition: linear 0.1s};
 a.orange:hover {color: #ff6200};
 a.red:hover {color: #f76f65};
 a.green:hover {color: #29ee75};
+a.darkGreen:hover {color: #727d88};
 
 main {height: 100vh};
 main, section {margin-bottom: 3em};
