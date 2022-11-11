@@ -4,33 +4,45 @@ $darkGreenColor: #9DA4AC;
 $grayColor: #8F7E7C;
 $orangeColor: #BA5514;
 $yellowColor: #DACB0C;
+$greenColor: #7BF1A8;
 
 $breakpointSM: 576px;
 $breakpointMD: 768px;
 $breakpointLG: 992px;
 
 .violet { color: $violetColor};
-
 .red {color: $redColor};
-
 .gray {color: $grayColor};
+.orange {color: $orangeColor};
+.yellow {color: $yellowColor};
+.green {color: $greenColor};
 
-
-.violet {
-    color: $violetColor
-}
 body {
     background-color: #1e1e24 !important;
     font-family: 'IBM Plex Mono', monospace;
     color: #DECBC9;
     margin: 0.5em 1em;
 }
-main, section {
-    margin-bottom: 3em;
-}
-main {
-    height: 100vh;
-}
+
+h2 {
+    font-size: 1.5em;
+    padding-bottom: 0.3em;
+};
+
+img {
+    max-width: 100%;
+    height: auto;
+    padding: 0 !important;
+};
+
+a { text-decoration: none};
+a:hover {transition: linear 0.1s};
+a.orange:hover {color: #ff6200};
+a.red:hover {color: #f76f65};
+a.green:hover {color: #29ee75};
+
+main {height: 100vh};
+main, section {margin-bottom: 3em};
 
 div#skills-div {
     h5 {
@@ -44,8 +56,19 @@ div#skills-div {
     }  
 }
 
-
-
+section#projects {
+    padding: 0 !important;
+    div {
+        margin-bottom: 4em;
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            margin-bottom: 0;
+            p {margin-bottom: .3em;}
+        }
+    }
+}
 
 @media (min-width: 400px) {
     body {
@@ -64,9 +87,23 @@ div#skills-div {
     }
 }
 
+@media (max-width: $breakpointMD) {
+    section#projects {
+        a.orange {
+            margin-bottom: 0.5em;
+        }
+    }
+}
+
 @media (min-width: $breakpointMD) {
     body {
         max-width: 35em;
+    }
+    section#projects {
+        div.reverse {
+            display: flex;
+            flex-direction: row-reverse;
+        }
     }
 
 }
