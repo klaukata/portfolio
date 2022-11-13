@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project: Weather App</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" type="text/css">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="../../styles/style.css">
+    <!-- icon -->
+    <link rel="icon" href="../../img/berry-icon.png">
+</head>
+<body class="my-4">  
+    <a class="darkGreen" href="https://kathbo.github.io/portfolio/#projects"> <<< home page </a>
+    <h1 class="mt-3 mb-2">Weather App</h1>
+    <p>Enter whichever city you'd like and see if you need to take an umbrella when you go outside!</p>
+    <div class="container technical-details">
+        <div class="row">
+            <p class="col-3 gray">stack:</p>
+            <p class="col-9 orange">html, bootstrap, sass, javascript</p>
+        </div>
+        <div class="row">
+            <p class="col-3 gray">code:</p>
+            <a class="col-9 green underline" href="https://github.com/kathbo/weather-app" target="_blank">repo link</a>
+        </div>
+        <div class="row">
+            <p class="col-3 gray">preview:</p>
+            <a class="col-9 green underline" href="https://kathbo.github.io/weather-app/" target="_blank">live page</a>
+        </div>
+    </div>
+    <div class="text-center">
+        <div class="spinner-grow my-5 text-warning text-ceneter" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <img class="project-img my-4 visually-hidden" src="img/screenshot.png" alt="project screenshot">
+    </div>
+      
+    
+    <div>
+        <h2 class="fw-bold">purpose and goal</h2>
+        <p>
+            My goal was to learn how asynchronous code works by learning how to 
+            <span class='violet'>implement data fetching</span>.
+            Is there a better way to learn how to do 
+            something, other than practicing it? Honestly, I don't think so.
+        </p>
+    </div>
+    <div class="">
+        <h2 class="fw-bold">user stories:</h2>
+        <ul>
+            <li>is responsive</li>
+            <li>matches previously designed UI</li>
+            <li>has a button that switches all temperatures from Celcius to 
+                Fahrenheit and vice versa</li>
+            <li>includes a heading that displays "Today" or "Tomorrow" 
+                depending on the circle that was clicked</li>
+            <li>displays an 8-hour forecast</li>
+            <li>8-hour forecast' circles are clickable. Once clicked, the div 
+                changes its colors, weather details section, and elements that 
+                display the current temperature and weather icon</li>
+            <li>"weather details" section contains eight divs, each displaying: 
+                sunrise, sunset, precipitation, humidity, UV index, visibility 
+                and "feels like" temperature </li>
+            <li>background-color changes depending on a temperature</li>
+        </ul>
+    </div>
+    <div>
+        <h2 class="fw-bold">challenges</h2>
+        <ol>
+            <li class="fw-bold">Every time user enters input, the website reloads</li>
+                <p>The form section on this app is not sending an input 
+                    anywhere and js was programmed in a way that it simply 
+                    takes an input.value parameter when submit button or enter 
+                    is clicked.</p>
+                <p>Learning that it's clear that we don't need a page to reload, 
+                    so to prevent that, I learned about 
+                    <span style="color: var(--yellow)">onsubmit event</span> 
+                    and used it accordingly:</p>
+                <img src="img/challange-reload.png" alt="">
+        </ol>
+    </div>
+    <div>
+        <h2 class="fw-bold">tl;dr</h2>
+        <p>
+            Through this project, I learned how APIs and asynchronous code work. 
+            Even though I planned to style this application using 
+            <span class="gray">(unknown to me at that time)</span> 
+            CSS preprocessor, which is Sass, after figuring out how easy it is,
+            I got to style most of an app with Bootstrap.
+        </p>
+    </div>
+
+    <script defer>
+
+        const image = document.querySelector('img.project-img');
+        const spinner = document.querySelector('div.spinner-grow');
+        window.onload = () => {
+            spinner.classList.add('visually-hidden');
+            image.classList.remove('visually-hidden');
+        }
+    </script>
+</body>
+</html>
