@@ -35,11 +35,14 @@ h2 {
 p,li {line-height: 1.25em};
 
 img {
-    max-width: 100%;
+    max-width: 60%;
     height: auto;
     padding: 0 !important;
 };
 
+img.project-img {
+    max-width: 100%;
+}
 a { text-decoration: none};
 a:hover {transition: linear 0.1s};
 a.orange:hover {color: #ff6200};
@@ -132,5 +135,20 @@ section#projects {
         }
     }
 }
-.subpage-section {margin-bottom: 1.5em;}
-.subpage-sections-h2 {margin: 0};
+.subpage-section {
+    margin-bottom: 1.5em;
+
+    ol {
+       li {
+            margin: 1em 0 0.5em;
+        } 
+        img {
+            margin: 0.5em 0;
+        }
+    }
+    p {
+        margin: 0.5em 0;
+    }
+    
+    .subpage-sections-h2 {margin: 0};
+}
