@@ -116,8 +116,8 @@ section#projects {
             flex-direction: row-reverse;
         }
     }
-
 }
+
 @media (min-width: $breakpointLG) {
     body {
         max-width: 40em;
@@ -136,6 +136,7 @@ section#projects {
         }
     }
 }
+
 .subpage-section {
     margin-bottom: 1.5em;
     ol {
