@@ -15,20 +15,20 @@
 
 <body class="mt-4 mb-5">  
     <a class="gray" href="https://kathbo.github.io/portfolio/#projects"> <<< home page </a>
-    <h1 class="mt-3 mb-2">Weather App</h1>
-    <p>Enter whichever city you'd like and see if you need to take an umbrella when you go outside!</p>
+    <h1 class="mt-3 mb-2">Etch A Sketch</h1>
+    <p>Draw whatever you want on your Minecraft-like sketchbook!</p>
     <div class="container technical-details">
         <div class="row">
             <p class="col-3 gray">stack:</p>
-            <p class="col-9 orange">html, bootstrap, sass, javascript</p>
+            <p class="col-9 orange">html, css, javascript</p>
         </div>
         <div class="row">
             <p class="col-3 gray">code:</p>
-            <a class="col-9 lh-1 green underline" href="https://github.com/kathbo/weather-app" target="_blank">repo link</a>
+            <a class="col-9 lh-1 green underline" href="https://github.com/kathbo/etch-a-sketch" target="_blank">repo link</a>
         </div>
         <div class="row">
             <p class="col-3 gray">preview:</p>
-            <a class="col-9 lh-1 green underline" href="https://kathbo.github.io/weather-app/" target="_blank">live page</a>
+            <a class="col-9 lh-1 green underline" href="https://kathbo.github.io/etch-a-sketch/" target="_blank">live page</a>
         </div>
     </div>
     <div class="text-center">
@@ -39,32 +39,29 @@
     </div>
     <div class="subpage-section">
         <h2 class="subpage-sections-h2 fw-bold">purpose and goal</h2>
-        <p>
-            My goal was to learn how asynchronous code works by learning how to 
-            <span class='yellow'>implement data fetching</span>.
-            Is there a better way to learn how to do 
-            something, other than practicing it? Honestly, I don't think so.
-        </p>
+        <p>The goal was to create a basic "sketchbook" that operates 
+            like a mouse-controlled Etch-a-Sketch: hovering over and pressing 
+            a square would color it with a random or fixed color. Changing 
+            the size of given squares would reset any previous modifications.</p>
+        <p>This project is a slightly altered version of 
+            <a class='violet' href="https://www.theodinproject.com/lessons/foundations-etch-a-sketch" target="_blank"> 
+            The Odin Project's assignment</a>, where the final result would 
+            be a bit less complex since it required just a hover effect present.</p>
     </div>
     <div class="subpage-section">
         <h2 class="subpage-sections-h2 fw-bold">user stories:</h2>
         <ul>
             <li>is responsive</li>
-            <li>matches previously designed UI</li>
-            <li>has a button that switches all temperatures from Celcius to 
-                Fahrenheit and vice versa</li>
-            <li>includes a heading that displays "Today" or "Tomorrow" 
-                depending on the circle that was clicked</li>
-            <li>displays an 8-hour forecast</li>
-            <li>8-hour forecast' circles are clickable. Once clicked, the div 
-                changes its colors, weather details section, and elements that 
-                display the current temperature and weather icon</li>
-            <li>"weather details" section contains eight divs, each displaying: 
-                sunrise, sunset, precipitation, humidity, UV index, visibility 
-                and "feels like" temperature </li>
-            <li>background-color changes depending on a temperature</li>
+            <li>matches the design on a Figma file, that I created for it</li>
+            <li>an option to change the size of squares</li>
+            <li>an option to change the color of users 'brush'</li>
+            <li>the color change works seamlessly</li>
+            <li>eraser 'brush' present</li>
+            <li>complete reset option without reloading the website</li>
+            <li>with each size change grid resets</li>
         </ul>
     </div>
+    
     <div class="subpage-section">
         <h2 class="subpage-sections-h2 fw-bold">challenges</h2>
         <ol>
