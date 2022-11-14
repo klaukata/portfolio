@@ -45,6 +45,7 @@ img.project-img {
 }
 a { text-decoration: none};
 a:hover {transition: linear 0.1s};
+a.violet:hover {color: #8d85c3};
 a.orange:hover {color: #ff6200};
 a.red:hover {color: #f76f65};
 a.green:hover {color: #29ee75};
@@ -137,18 +138,10 @@ section#projects {
 }
 .subpage-section {
     margin-bottom: 1.5em;
-
     ol {
-       li {
-            margin: 1em 0 0.5em;
-        } 
-        img {
-            margin: 0.5em 0;
-        }
+        li {margin: 1em 0 0.5em};
+        img {margin: 0.5em 0};
     }
-    p {
-        margin: 0.5em 0;
-    }
-    
+    p {margin: 0.5em 0};
     .subpage-sections-h2 {margin: 0};
 }
