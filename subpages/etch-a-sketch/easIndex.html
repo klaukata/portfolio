@@ -15,7 +15,7 @@
 
 <body class="mt-4 mb-5">  
     <a class="gray" href="https://kathbo.github.io/portfolio/#projects"> <<< home page </a>
-    <h1 class="mt-3 mb-2  fw-bold">Etch A Sketch</h1>
+    <h1 class="mt-3 mb-2 fw-bold">Etch A Sketch</h1>
     <p>Draw whatever you want on your Minecraft-like sketchbook!</p>
     <div class="container technical-details">
         <div class="row">
@@ -69,7 +69,7 @@
                 <p>Originally, I assumed that I will tackle the squares' layout 
                      using Flexbox. After lots of maneuvering this is the best I could achieve:</p>
                 <img src="img/challanges/challange-overflow.png" alt="picture of quares overflowing">
-                <p class="">At this point, I knew that <span>re-learning Grid</span>, 
+                <p class="">At this point, I knew that <span class="yellow">re-learning Grid</span>, 
                     after years of not using it, will do the trick. And I was right.</p>
                 <img src="img/challanges/challange-overflow-after.png" alt="">
             <li class="fw-bold">Squares have a fixed size</li>
@@ -79,12 +79,12 @@
                     I switched to already known relative units: vh/vw, em, rem, %. 
                     To no avail. </p>
                 <p>A solution to this problem came instantaneously after 
-                    learning CSS Grid's <span>fr unit</span>.</p>
+                    learning CSS Grid's <span class="yellow">fr unit</span>.</p>
             <li class="fw-bold">Two event listeners added to the same element</li>
                 <p>Since I wanted squares to change color during mouse press and 
                     hover simultaneously, I thought I could nest one event listener 
                     inside another. Well, turns out you can't. 
-                    <span style="color: var(--gray)">At least I couldn't make it work.</span></p>
+                    <span class="gray">At least I couldn't make it work.</span></p>
                 <p>I needed to find a way to omit one of the listeners, so I declared 
                     mousePosition variable:</p>
                 <img style="max-width: 80%" src="img/challanges/challange-mousePosition.png" alt="">
@@ -98,28 +98,18 @@
                     just acting up, so I simply ignored it. When I was finishing this project, 
                     however, and my to-do list got smaller and smaller, I started 
                     thinking that maybe it was not my mouse's fault at all.</p>
-                <p><a href="https://www.w3schools.com/cssref/pr_class_cursor.asp">W3Schools</a> 
+                <p><a class="green underline" href="https://www.w3schools.com/cssref/pr_class_cursor.asp">W3Schools</a> 
                     explains that a not allowed cursor implies that "The cursor 
                     indicates that the requested action will not be executed". 
                     So I started thinking: What action does the browser think I 
                     want to do here? I had no idea, angry and frustrated, 
                     I abandoned the whole project until I dragged the Google logo 
                     on my homepage a few days later. And that was when it hit me: 
-                    <span style="color: var(--dark-green)">the browser did not allow me to drag squares</span>! 
+                    <span class="darkGreen">the browser did not allow me to drag squares</span>! 
                     Of course! </p>
-                <p>So I made each hovered-over square <span>undraggable</span>, 
+                <p>So I made each hovered-over square <span class="yellow">undraggable</span>, 
                     with this line of code:</p>
                 <img src="img/challanges/challange-cursor.png" alt="">
-            <li class="fw-bold">Every time user enters input, the website reloads</li>
-                <p>The form section on this app is not sending an input 
-                    anywhere and js was programmed in a way that it simply 
-                    takes an input.value parameter when submit button or enter 
-                    is clicked.</p>
-                <p>Learning that it's clear that we don't need a page to reload, 
-                    so to prevent that, I learned about 
-                    <span style="color: var(--yellow)">onsubmit event</span> 
-                    and used it accordingly:</p>
-                <img src="img/challange-reload.png" alt="">
         </ol>
     </div>
     <div class="subpage-section">
