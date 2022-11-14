@@ -49,69 +49,16 @@
             for my liking. at that time i was fascinated by Figma's community section 
             and that's when i found my inspiration.</p>
     </div>
-    <div class="subpage-section">
-        <h2 class="subpage-sections-h2 fw-bold">user stories:</h2>
-        <ul>
-            <li>is responsive</li>
-            <li>matches the design on a Figma file, that I created for it</li>
-            <li>an option to change the size of squares</li>
-            <li>an option to change the color of users 'brush'</li>
-            <li>the color change works seamlessly</li>
-            <li>eraser 'brush' present</li>
-            <li>complete reset option without reloading the website</li>
-            <li>with each size change grid resets</li>
-        </ul>
-    </div>
+
     
     <div class="subpage-section">
         <h2 class="subpage-sections-h2 fw-bold">challenges</h2>
-        <ol>
-            <li class="fw-bold">Squares are overflowing</li>
-                <p>Originally, I assumed that I will tackle the squares' layout 
-                     using Flexbox. After lots of maneuvering this is the best I could achieve:</p>
-                <img src="img/challanges/challange-overflow.png" alt="picture of quares overflowing">
-                <p class="">At this point, I knew that <span class="yellow">re-learning Grid</span>, 
-                    after years of not using it, will do the trick. And I was right.</p>
-                <img src="img/challanges/challange-overflow-after.png" alt="">
-            <li class="fw-bold">Squares have a fixed size</li>
-                <p>At first, I defined each square's width and height by px x px. 
-                    After I applied the Grid layout, I started wondering how to 
-                    prevent having to set a different px value for every size. 
-                    I switched to already known relative units: vh/vw, em, rem, %. 
-                    To no avail. </p>
-                <p>A solution to this problem came instantaneously after 
-                    learning CSS Grid's <span class="yellow">fr unit</span>.</p>
-            <li class="fw-bold">Two event listeners added to the same element</li>
-                <p>Since I wanted squares to change color during mouse press and 
-                    hover simultaneously, I thought I could nest one event listener 
-                    inside another. Well, turns out you can't. 
-                    <span class="gray">At least I couldn't make it work.</span></p>
-                <p>I needed to find a way to omit one of the listeners, so I declared 
-                    mousePosition variable:</p>
-                <img style="max-width: 80%" src="img/challanges/challange-mousePosition.png" alt="">
-                <p>And used in an if statement inside of the 'mouseover' event lister:</p>
-                <img src="img/challanges/challange-mousePosition-nested.png" alt="">
-            <li class="fw-bold">'Not allowed' cursor</li>
-                <img style="max-width: 100%" src="img/challanges/challange-cursor-gif.gif" alt="">
-                <p>Since I started working on this application, I encountered 
-                    this random cursor change while coloring squares. At first, 
-                    I assumed that it was my mouse (that had been dropped countless times) 
-                    just acting up, so I simply ignored it. When I was finishing this project, 
-                    however, and my to-do list got smaller and smaller, I started 
-                    thinking that maybe it was not my mouse's fault at all.</p>
-                <p><a class="green underline" href="https://www.w3schools.com/cssref/pr_class_cursor.asp">W3Schools</a> 
-                    explains that a not allowed cursor implies that "The cursor 
-                    indicates that the requested action will not be executed". 
-                    So I started thinking: What action does the browser think I 
-                    want to do here? I had no idea, angry and frustrated, 
-                    I abandoned the whole project until I dragged the Google logo 
-                    on my homepage a few days later. And that was when it hit me: 
-                    <span class="darkGreen">the browser did not allow me to drag squares</span>! 
-                    Of course! </p>
-                <p>So I made each hovered-over square <span class="yellow">undraggable</span>, 
-                    with this line of code:</p>
-                <img src="img/challanges/challange-cursor.png" alt="">
-        </ol>
+        <p>back then i had no idea how Document Object Model works but i still 
+            wanted to include a <span class="yellow">sidebar menu.</span></p>
+        <p>that is when i started to learn how valuable and functional javascript 
+            can be for a website. i also learned that is way more manageable to 
+            just add a CSS class to a particular element instead of doing 
+            everything in javascript alone.</p>
     </div>
     <div class="subpage-section">
         <h2 class="subpage-sections-h2 fw-bold">wrapping up</h2>
