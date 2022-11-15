@@ -1,0 +1,185 @@
+.violet {
+  color: #ABA2E6;
+}
+
+.red {
+  color: #C36761;
+}
+
+.darkGreen {
+  color: #9DA4AC;
+}
+
+.gray {
+  color: #8F7E7C;
+}
+
+.orange {
+  color: #BA5514;
+}
+
+.yellow {
+  color: #DACB0C;
+}
+
+.green {
+  color: #7BF1A8;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+body {
+  background-color: #1e1e24 !important;
+  font-family: "IBM Plex Mono", monospace;
+  color: #DECBC9;
+  margin: 0.5em 1em;
+}
+
+h2 {
+  font-size: 1.5em;
+  padding-bottom: 0.3em;
+}
+
+p, li {
+  line-height: 1.25em;
+}
+
+img {
+  max-width: 60%;
+  height: auto;
+  padding: 0 !important;
+}
+
+img.project-img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  transition: linear 0.1s;
+}
+
+a.violet:hover {
+  color: #8d85c3;
+}
+
+a.orange:hover {
+  color: #ff6200;
+}
+
+a.red:hover {
+  color: #f76f65;
+}
+
+a.green:hover {
+  color: #29ee75;
+}
+
+a.darkGreen:hover {
+  color: #727d88;
+}
+
+a.gray:hover {
+  color: #b6a9a8;
+}
+
+main {
+  height: 100vh;
+}
+
+main, section {
+  margin-bottom: 3em;
+}
+
+div#skills-div h5 {
+  font-size: 1.1em;
+}
+div#skills-div ul {
+  padding-left: 0;
+}
+div#skills-div ul li {
+  display: inline;
+}
+
+section#projects {
+  padding: 0 !important;
+}
+section#projects div {
+  margin-bottom: 4em;
+}
+section#projects div div {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  margin-bottom: 0;
+}
+section#projects div div p {
+  margin-bottom: 0.3em;
+}
+
+@media (min-width: 400px) {
+  body {
+    margin: 0.5em 3em;
+  }
+}
+@media (min-width: 576px) {
+  html {
+    display: table;
+    margin: auto;
+  }
+  body {
+    margin: 0;
+    max-width: 30em;
+  }
+}
+@media (max-width: 768px) {
+  section#projects a.orange {
+    margin-bottom: 0.5em;
+  }
+}
+@media (min-width: 768px) {
+  body {
+    max-width: 35em;
+  }
+  section#projects div.reverse {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+@media (min-width: 992px) {
+  body {
+    max-width: 40em;
+  }
+}
+.technical-details {
+  padding: 0;
+}
+.technical-details div {
+  margin: 0 0 0.4em;
+}
+.technical-details div * {
+  padding: 0;
+  margin: 0;
+}
+
+.subpage-section {
+  margin-bottom: 1.5em;
+}
+.subpage-section ol li {
+  margin: 1em 0 0.5em;
+  font-size: 1.1em;
+}
+.subpage-section ol img {
+  margin: 0.5em 0;
+}
+.subpage-section p {
+  margin: 0.5em 0;
+}
+.subpage-section .subpage-sections-h2 {
+  margin: 0;
+}/*# sourceMappingURL=style.css.map */
