@@ -54,7 +54,9 @@ a.green:hover {color: #29ee75};
 a.darkGreen:hover {color: #727d88};
 a.gray:hover {color: #b6a9a8};
 
-div {margin-bottom: 3em}; //???
+div.scroll-section {
+    min-height: 100vh
+}
 div#welcome-section {min-height: 100vh}
 div#skills-div {
     h5 {
