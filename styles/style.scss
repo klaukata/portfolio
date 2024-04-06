@@ -25,6 +25,8 @@ body {
     font-family: 'IBM Plex Mono', monospace;
     color: #DECBC9;
     margin: 0.5em 1em;
+
+     
 }
 
 h2 {
@@ -52,9 +54,8 @@ a.green:hover {color: #29ee75};
 a.darkGreen:hover {color: #727d88};
 a.gray:hover {color: #b6a9a8};
 
-main {height: 100vh};
-main, section {margin-bottom: 3em};
-
+div {margin-bottom: 3em}; //???
+div#welcome-section {min-height: 100vh}
 div#skills-div {
     h5 {
         font-size: 1.1em;
@@ -67,7 +68,7 @@ div#skills-div {
     }  
 }
 
-section#projects {
+div#projects {
     padding: 0 !important;
     div {
         margin-bottom: 4em;
