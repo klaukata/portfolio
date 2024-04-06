@@ -55,7 +55,39 @@ a.darkGreen:hover {color: #727d88};
 a.gray:hover {color: #b6a9a8};
 
 div.scroll-section {
-    min-height: 100vh
+    height: 100vh;
+    div#scroll-down-animation {
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        h2 {
+            color: $grayColor;
+            margin-top: 1em;
+            font-weight: 200;
+            font-size: 16px;
+        }
+        .mouse {
+            margin: 0 auto;
+            display: block;
+            border-radius: 50px;
+            border: 2px solid $grayColor;
+            height: 100px;
+            width: 50px;
+            position: relative;
+        }
+        .move {
+            position: absolute;
+            background-color: $grayColor;
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: move 2s linear infinite;
+          }
+    }
+
 }
 div#welcome-section {min-height: 100vh}
 div#skills-div {
@@ -124,6 +156,21 @@ div#projects {
 @media (min-width: $breakpointLG) {
     body {
         max-width: 40em;
+    }
+}
+
+@keyframes move {
+    0% {
+      transform: translate(-50%,10px);
+      opacity: 0;
+    }
+    50% {
+      transform: translate(-50%,40px);
+      opacity: 1;
+    }
+    100% {
+      transform: translate(-50%,80px);
+      opacity: 0;
     }
 }
 
