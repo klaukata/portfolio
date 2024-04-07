@@ -35,6 +35,28 @@
     <!-- portfolio section -->
     <div class="scroll-section portfolio container" id="projects">
         <h2 class="mb-1">my projects</h2>
+        <p>click on a specific shield in order to display projects that use that technology!</p>
+        <div class="container py-1" id="skills-div">
+            <div class="row">
+                <ul>
+                    <li class='filter-button' data-filter="all"><img src="https://img.shields.io/badge/all%20projects-808080" alt=""></li>
+                    <li class='filter-button' data-filter="html"><img src="https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=HTML5&logoColor=white" alt=""></li>
+                    <li class='filter-button' data-filter="css"><img src="https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=CSS3&logoColor=white" alt=""></li>
+                    <li class='filter-button' data-filter="sass"><img src="https://img.shields.io/badge/-Sass-CC6699?style=flat&logo=sass&logoColor=white" alt=""></li>
+                    <li class='filter-button' data-filter="js"><img src="https://img.shields.io/badge/-JavaScript-%23f34e1e?style=flat&logo=javascript&logoColor=000000&color=%23F7DF1E" alt=""></li>
+                    <li class='filter-button' data-filter="bootstrap"><img src="https://img.shields.io/badge/-Bootstrap-7952B3?style=flat&logo=Bootstrap&logoColor=white" alt=""></li>
+                    <li class='filter-button' data-filter="figma"><img src="https://img.shields.io/badge/-Figma-%23f34e1e?style=flat&logo=figma&logoColor=ffffff&color=%23f34e1e" alt=""></li>
+                </ul>
+            </div>
+            <div class="row" id="project-list">
+                <!-- test projects -->
+                <div class="project-item html">Project 1 (Python)</div>
+                <div class="project-item js">Project 2 (JavaScript)</div>
+            </div>
+    </div>
+    <!-- portfolio section OLD-->
+    <div class="scroll-section portfolio container" id="projects">
+        <h2 class="mb-1">my projects</h2>
         <!-- <div class="row">
             <div class="col-md-5">
                 <p class="portfolio-description">i build a <span class="yellow">weather app</span></p>
@@ -89,6 +111,8 @@
             </div> -->
         </div>
     </div>
+
+
     <!-- my skills section -->
     <div class="scroll-section skills" id="skills-section">
         <h2>my skills</h2>
@@ -172,5 +196,6 @@
     </div>
     <script src="scripts/scroll.js"></script>
     <script src="scripts/typing_simulation.js"></script>
+    <script src="scripts/project-filtering.js"></script>
 </body>
 </html>
