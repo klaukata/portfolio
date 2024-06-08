@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let speed = 170
 
     let index = 0
+    
     const typing = setInterval(() => {
         document.getElementById('simulateTyping').textContent += text[index];
         index++;
