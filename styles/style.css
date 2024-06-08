@@ -89,7 +89,7 @@ a.gray:hover {
 }
 
 div.scroll-section {
-  height: 100vh;
+  height: 100vh !important;
 }
 div.scroll-section div#scroll-down-animation {
   position: absolute;
