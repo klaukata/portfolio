@@ -132,7 +132,7 @@ div#skills-div ul li {
 }
 
 div#projects {
-  padding: 0 !important;
+  padding: 2em 0 !important;
 }
 div#projects div {
   margin-bottom: 4em;
@@ -145,6 +145,33 @@ div#projects div div {
 }
 div#projects div div p {
   margin-bottom: 0.3em;
+}
+div#projects li.filter-button:hover {
+  cursor: pointer;
+}
+div#projects div#project-list {
+  margin-top: 2em;
+}
+div#projects div#project-list div.project-item {
+  border: 0.1px rgba(255, 255, 255, 0.4) solid;
+  border-radius: 10px;
+  padding: 1.5em 1em;
+  margin-bottom: 2em;
+}
+div#projects div#project-list div.project-item h2 {
+  margin-bottom: 0;
+}
+div#projects div#project-list div.project-item a {
+  font-weight: bold;
+}
+
+div#about-section, div#contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+div#about-section div#contact-section, div#contact-section div#contact-section {
+  align-items: center;
 }
 
 @media (min-width: 400px) {
@@ -194,31 +221,4 @@ div#projects div div p {
     transform: translate(-50%, 80px);
     opacity: 0;
   }
-}
-.technical-details {
-  padding: 0;
-}
-.technical-details div {
-  margin: 0 0 0.4em;
-}
-.technical-details div * {
-  padding: 0;
-  margin: 0;
-}
-
-.subpage-section {
-  margin-bottom: 1.5em;
-}
-.subpage-section ol li {
-  margin: 1em 0 0.5em;
-  font-size: 1.1em;
-}
-.subpage-section ol img {
-  margin: 0.5em 0;
-}
-.subpage-section p {
-  margin: 0.5em 0;
-}
-.subpage-section .subpage-sections-h2 {
-  margin: 0;
 }/*# sourceMappingURL=style.css.map */

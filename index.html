@@ -32,9 +32,9 @@
             <span id="simulateTyping"></span> &#128640
         </h1>
         <p class="lh-sm">my name is <span class="violet">klaudia borowy</span><br><span class="gray">
-            and</span><br>i code <span class="red">sometimes</span>
+            and</span><br>i code <span class="orange">sometimes</span>
         </p>
-        <p>view my cv <a href="files/KlaudiaBorowyCV.pdf" class="green" target="_blank">here!</a></p>
+        <p>view my cv <a href="files/KlaudiaBorowyResume.pdf" class="green" target="_blank">here!</a></p>
         <div id="scroll-down-animation">
             <span class="mouse">
               <span class="move"></span>
@@ -49,147 +49,49 @@
             <div class="row">
                 <ul>
                     <li class='filter-button' data-filter="all"><img src="https://img.shields.io/badge/all%20projects-808080" alt=""></li>
-                    <li class='filter-button' data-filter="html"><img src="https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=HTML5&logoColor=white" alt=""></li>
-                    <li class='filter-button' data-filter="css"><img src="https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=CSS3&logoColor=white" alt=""></li>
-                    <li class='filter-button' data-filter="sass"><img src="https://img.shields.io/badge/-Sass-CC6699?style=flat&logo=sass&logoColor=white" alt=""></li>
-                    <li class='filter-button' data-filter="js"><img src="https://img.shields.io/badge/-JavaScript-%23f34e1e?style=flat&logo=javascript&logoColor=000000&color=%23F7DF1E" alt=""></li>
-                    <li class='filter-button' data-filter="bootstrap"><img src="https://img.shields.io/badge/-Bootstrap-7952B3?style=flat&logo=Bootstrap&logoColor=white" alt=""></li>
-                    <li class='filter-button' data-filter="figma"><img src="https://img.shields.io/badge/-Figma-%23f34e1e?style=flat&logo=figma&logoColor=ffffff&color=%23f34e1e" alt=""></li>
+                    <li class='filter-button' data-filter="python"><img src="https://img.shields.io/badge/-Python-4584b6?style=flat&logo=python&logoColor=white" alt=""></li>
+                    <li class='filter-button' data-filter="pandas"><img src="https://img.shields.io/badge/-Pandas-0C0454?style=flat&logo=pandas&logoColor=white" alt=""></li>
+                    <li class='filter-button' data-filter="jupyter"><img src="https://img.shields.io/badge/-Jupyter-F47424?style=flat&logo=jupyter&logoColor=white" alt=""></li>
+                    <li class='filter-button' data-filter="powerbi"><img src="https://img.shields.io/badge/-Power%20Bi-f6d958?style=flat&logo=powerbi&logoColor=black" alt=""></li>
                 </ul>
             </div>
             <div class="row" id="project-list">
-                <!-- test projects -->
-                <div class="project-item html">Project 1 (Python)</div>
-                <div class="project-item js">Project 2 (JavaScript)</div>
+                <div class="project-item python pandas jupyter">
+                    <h2>Data Cleaning: London Bike Sharing</h2>
+                    <p>stack: <i>python, pandas, jupyter</i></p>
+                    <a href="https://github.com/klaukata/BikeSharing" class="red" target="_blank" rel="noopener noreferrer">>>> GITHUB REPO</a>
+                </div>
+                <div class="project-item powerbi">
+                    <h2>Vizualization: AdventureWork</h2>
+                    <p>stack: <i>power bi</i></p>
+                    <a href="https://github.com/klaukata/visualization-AdventureWorks" class="red" target="_blank" rel="noopener noreferrer">>>> GITHUB REPO</a>
+                </div>
             </div>
-    </div>
-    
-    <!-- portfolio section OLD-->
-    <div class="scroll-section portfolio container" id="projects">
-        <h2 class="mb-1">my projects</h2>
-        <!-- <div class="row">
-            <div class="col-md-5">
-                <p class="portfolio-description">i build a <span class="yellow">weather app</span></p>
-                <p>enter whichever city you'd like and see if you need to take an umbrella when you go outside!</p>
-                <a href="subpages/weather-app/waIndex.html" class="orange"> >>> VIEW PROJECT</a>
-            </div>
-            <img class="col-md-7" src="img/projects/wa.png" alt="">
-        </div>
-        <div class="row reverse">
-            <div class="col-md-5">
-                <p class="portfolio-description">i build a web version 
-                    of the <span class="yellow">etch-a-sketch</span>
-                </p>
-                <p>draw whatever you want on your minecraft-like sketchbook!</p>
-                <a href="subpages/etch-a-sketch/easIndex.html" class="orange"> >>> VIEW PROJECT</a>
-            </div>
-            <img class="col-md-7" src="img/projects/eas.png" alt="">
-        </div>
-        <div class="row">
-            <div class="col-md-5">
-                <p class="portfolio-description">i build a classic 
-                    <span class="yellow">rock paper scissors</span> game, but this 
-                    time it's you vs. the computer!
-                </p>
-                <a href="subpages/rps/rpsIndex.html" class="orange"> >>> VIEW PROJECT</a>
-            </div>
-            <img class="col-md-7" src="img/projects/rps.png" alt="">
-        </div>
-        <div class="row reverse">
-            <div class="col-md-5">
-                <p class="portfolio-description">i built a 
-                <span class="yellow">landing page</span> for 3d image library
-            </p>
-            <a href="subpages/3d/3dIndex.html" class="orange"> >>> VIEW PROJECT</a>
-            </div>
-            <img class="col-md-7" src="img/projects/3d.png" alt="">
-        </div>
-        <div class="row">
-            <div class="col-md-5">
-                <p class="portfolio-description">i built a <span class="yellow">landing page</span> teplate</p>
-                <p>aka [ENTER TEXT HERE]</p>
-                <a href="subpages/landing-page/LPindex.html" class="orange"> >>> VIEW PROJECT</a>
-            </div>
-            <img class="col-md-7" src="img/projects/top.png" alt="">
-        </div>
-        <div class="text-end" id="porfolio-designs">
-            <div>
-                <p class="portfolio-description">i also dabbled in
-                    web design
-                </p>
-                <a href="subpages/designs/dIndex.html"  class="orange"> >>> VIEW MY DESIGNS</a>
-            </div> -->
         </div>
     </div>
 
 
-    <!-- my skills section -->
-    <div class="scroll-section skills" id="skills-section">
-        <h2>my skills</h2>
-        <div class="container px-5" id="skills-div">
-            <div class="row gx-4">
-                <ul>
-                    <li><img src="https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=HTML5&logoColor=white" alt=""></li>
-                    <li><img src="https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=CSS3&logoColor=white" alt=""></li>
-                    <li><img src="https://img.shields.io/badge/-Sass-CC6699?style=flat&logo=sass&logoColor=white" alt=""></li>
-                    <li><img src="https://img.shields.io/badge/-JavaScript-%23f34e1e?style=flat&logo=javascript&logoColor=000000&color=%23F7DF1E" alt=""></li>
-                    <li><img src="https://img.shields.io/badge/-Git-F05032?style=flat&logo=Git&logoColor=white" alt=""></li>
-                    <li><img src="https://img.shields.io/badge/-Bootstrap-7952B3?style=flat&logo=Bootstrap&logoColor=white" alt=""></li>
-                    <br>
-                    <li><img src="https://img.shields.io/badge/-VSCode-%23007ACC?style=flat&logo=VisualStudioCode&logoColor=ffffff&color=%23007ACC" alt=""></li>
-                    <li><img src="https://img.shields.io/badge/-Figma-%23f34e1e?style=flat&logo=figma&logoColor=ffffff&color=%23f34e1e" alt=""></li>
-                    <li><img src="https://img.shields.io/badge/-GitHub-%23181717?style=flat&logo=GitHub&logoColor=ffffff&color=%23181717" alt=""></li>
-                    <li><img src="https://img.shields.io/badge/-Chrome%20DevTools-%230ba15a?style=flat&logo=googlechrome&logoColor=ffffff&color=%234285F4" alt=""></li>
-                </ul>
-                <!-- <div class="col-12 col-sm-6">
-                    <h5>languages & tools:</h5>
-                    <ul>
-                        <li><img src="https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=HTML5&logoColor=white" alt=""></li>
-                        <li><img src="https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=CSS3&logoColor=white" alt=""></li>
-                        <li><img src="https://img.shields.io/badge/-Sass-CC6699?style=flat&logo=sass&logoColor=white" alt=""></li>
-                        <li><img src="https://img.shields.io/badge/-JavaScript-%23f34e1e?style=flat&logo=javascript&logoColor=000000&color=%23F7DF1E" alt=""></li>
-                        <li><img src="https://img.shields.io/badge/-Git-F05032?style=flat&logo=Git&logoColor=white" alt=""></li>
-                    </ul>
-                </div>
-                <div class="col-12 col-sm-6">
-                    <h5>frameworks & libraries:</h5>
-                    <ul>
-                        <li><img src="https://img.shields.io/badge/-Bootstrap-7952B3?style=flat&logo=Bootstrap&logoColor=white" alt=""></li>
-                    </ul>
-                </div>
-                <div class="col-12">
-                    <h5>environment:</h5>
-                    <ul>
-                        <li><img src="https://img.shields.io/badge/-VSCode-%23007ACC?style=flat&logo=VisualStudioCode&logoColor=ffffff&color=%23007ACC" alt=""></li>
-                        <li><img src="https://img.shields.io/badge/-Figma-%23f34e1e?style=flat&logo=figma&logoColor=ffffff&color=%23f34e1e" alt=""></li>
-                        <li><img src="https://img.shields.io/badge/-GitHub-%23181717?style=flat&logo=GitHub&logoColor=ffffff&color=%23181717" alt=""></li>
-                        <li><img src="https://img.shields.io/badge/-Chrome%20DevTools-%230ba15a?style=flat&logo=googlechrome&logoColor=ffffff&color=%234285F4" alt=""></li>
-                    </ul>
-                </div> -->
-            </div>
-        </div>        
-    </div>
     <!-- about me section -->
     <div class="scroll-section about-me" id="about-section">
         <h2>about me</h2>
-        <p>on the internet, i go by <span class="violet">kath</span>
-            <span class="gray"> [katherine is my second name]</span> or 
-            <span class="violet">berry</span>
-            <span class="gray"> [english equivalent of my childhood nickname]</span>
+        <p>on the internet, i go by <span class="violet">klaukata</span>
+            <span class="gray"> [both "klau" and "kata" are the first four letters of my first and middle name, respectively]</span>
         </p>
-        <p>my love of beautiful websites made me curious about how they were 
-            made. after lots of research, i discovered web development which 
-            led to my interest in frontend development. since then, i've been 
-            honing my skills and <span class="red">building projects</span> 
-            to apply what i've learned.
+        <p>
+            at first, I was fascinated by frontend development, where I developed the skills that enabled me to create this website. 
+            however, after a while, I yearned for more challenging and <span class="red">stimulating</span> work
         </p>
-        <p>&#128105;&#8205;&#128187; i love building good-looking websites 
-            from scratch
+        <p>
+            i'm at the beginning of my data-driven career, and so far, i have discovered a passion for data manipulation.
+            i enjoy the problem-solving aspect of data engineering and the satisfaction of turning raw data into actionable insights
         </p>
-        <p>&#127748 when i’m not coding my next project, i like to spend time 
-            reading books, exploring the world, or playing halo 3
+        <p>also:</p>
+        <p>&#128105;&#8205;&#128187; i'm <span class="gray">almost</span> in my <span class="darkGreen">second year</span> of studying computer science at
+        university of information technology and management in rzeszow</p>
+        <p>&#127748 when i’m not working on my next project, i like to spend time 
+            reading non-fiction, exploring the world, and <span class="orange">working on those gains</span>
         </p>
-        <p>&#127775 i also have an interest in ux/ui design</p>
+        <!-- <p>&#127775 i also have an interest in ux/ui design</p> -->
     </div>
     <!-- contact me section -->
     <div class="scroll-section contact" id="contact-section">

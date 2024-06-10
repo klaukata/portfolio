@@ -82,6 +82,9 @@ div.scroll-section {
 
 }
 div#welcome-section {min-height: 100vh}
+
+
+// my projects section
 div#skills-div {
     h5 {
         font-size: 1.1em;
@@ -95,7 +98,7 @@ div#skills-div {
 }
 
 div#projects {
-    padding: 0 !important;
+    padding: 2em 0 !important;
     div {
         margin-bottom: 4em;
         div {
@@ -106,6 +109,27 @@ div#projects {
             p {margin-bottom: .3em;}
         }
     }
+    li.filter-button:hover {cursor: pointer;}
+    div#project-list {
+        margin-top: 2em;
+        div.project-item {
+            border: .1px rgba(255, 255, 255, 0.4) solid;
+            border-radius: 10px;
+            padding: 1.5em 1em;
+            margin-bottom: 2em;
+            h2 {margin-bottom: 0;}
+            a {font-weight:bold}
+        }    
+    }
+    
+}
+
+div#about-section, div#contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    div#contact-section {align-items: center;}
 }
 
 @media (min-width: 400px) {
@@ -168,26 +192,26 @@ div#projects {
 
 // subpages
 
-.technical-details {
-    padding: 0;
-    div {
-        margin: 0 0 .4em;
-        * {
-            padding: 0;
-            margin: 0;
-        }
-    }
-}
+// .technical-details {
+//     padding: 0;
+//     div {
+//         margin: 0 0 .4em;
+//         * {
+//             padding: 0;
+//             margin: 0;
+//         }
+//     }
+// }
 
-.subpage-section {
-    margin-bottom: 1.5em;
-    ol {
-        li {
-            margin: 1em 0 0.5em;
-            font-size: 1.1em
-        };
-        img {margin: 0.5em 0};
-    }
-    p {margin: 0.5em 0};
-    .subpage-sections-h2 {margin: 0};
-}
+// .subpage-section {
+//     margin-bottom: 1.5em;
+//     ol {
+//         li {
+//             margin: 1em 0 0.5em;
+//             font-size: 1.1em
+//         };
+//         img {margin: 0.5em 0};
+//     }
+//     p {margin: 0.5em 0};
+//     .subpage-sections-h2 {margin: 0};
+// }
