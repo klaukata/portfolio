@@ -1,7 +1,7 @@
-# My Portfolio
-Stack: <i>html, bootstrap, sass</i><br>
-Live page: <a href="https://kathbo.github.io/portfolio/">link</a> <br><br>
-![image](https://user-images.githubusercontent.com/94912046/202273855-dad50f5f-377e-4ee0-b397-2fe5cbe86284.png)
+# Portfolio
+Stack: <i>html, bootstrap, sass, js</i><br>
+Live page: <a href="https://klaukata.github.io/portfolio/">link</a> <br><br>
+![image](files\pics\portfolio-screenshot.png)
 
 ---
 links:
