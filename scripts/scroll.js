@@ -1,19 +1,21 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // scroll on mouse wheel
-    let scrollableSectionIndex = 0
-    let sections = document.querySelectorAll('.scroll-section')
+    let scrollPosition = 0;
 
     window.addEventListener('wheel', (e) => {
         e.preventDefault();
 
-        if (e.deltaY > 0 && scrollableSectionIndex < sections.length - 1) {
-            scrollableSectionIndex++;
-        } else if (e.deltaY < 0 && scrollableSectionIndex > 0) {
-            scrollableSectionIndex--;
+        const viewportHeight = window.innerHeight;
+        const maxScroll = document.documentElement.scrollHeight - viewportHeight;
+
+        if (e.deltaY > 0) {
+            scrollPosition = Math.min(scrollPosition + viewportHeight, maxScroll);
+        } else if (e.deltaY < 0) {
+            scrollPosition = Math.max(scrollPosition - viewportHeight, 0);
         }
-        sections[scrollableSectionIndex].scrollIntoView({
+
+        window.scrollTo({
+            top: scrollPosition,
             behavior: 'smooth'
-        })
-        console.log(e)
-    })
-})
+        });
+    });
+});
