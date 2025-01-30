@@ -133,6 +133,7 @@ div#skills-div ul li {
 
 div#projects {
   padding: 2em 0 !important;
+  height: 200vh !important;
 }
 div#projects div {
   margin-bottom: 4em;
