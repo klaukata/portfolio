@@ -1,11 +1,13 @@
 name: Frontend Linting Workflow
 
 on:  
+  # every push, included 4 testing, TODO: rm
   push:
     branches:
       - '*'
-  # pull_request:
-  #   branches: [ "main" ]
+  pull_request:
+    branches: 
+      - 'main'
 
 #
 jobs:
