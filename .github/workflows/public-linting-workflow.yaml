@@ -17,6 +17,6 @@ jobs:
     steps:
       - name: Checkout /public
         uses: actions/checkout@v4
-        # with: # fetch only public/ folder 
-        #   sparse-checkout: |
-        #     public
+        with: # fetch only public/ folder 
+          sparse-checkout: |
+            public
