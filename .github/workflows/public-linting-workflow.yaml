@@ -5,6 +5,7 @@ on:
   push:
     branches:
       - '*'
+  # on every pull req to a main branch...
   pull_request:
     branches: 
       - 'main'
