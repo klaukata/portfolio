@@ -9,11 +9,11 @@ on:
 
 #
 jobs:
-  lint:
+  lint-job:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repo
+      - name: Checkout /public
         uses: actions/checkout@v4
-        with: # fetch only public/ folder 
-          sparse-checkout: |
-            public
+        # with: # fetch only public/ folder 
+        #   sparse-checkout: |
+        #     public
