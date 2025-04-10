@@ -1,9 +1,9 @@
 name: Frontend Linting Workflow
 
-# on every pull request to a main branch ...
 on:  
-  schedule: #  on every minute, TODO: rm
-    - cron: '*/1 * * * *' 
+  push:
+    branches:
+      - '*'
   # pull_request:
   #   branches: [ "main" ]
 
