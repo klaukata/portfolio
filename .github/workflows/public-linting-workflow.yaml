@@ -1,0 +1,19 @@
+name: Frontend Linting Workflow
+
+# on every pull request to a main branch ...
+on:  
+  schedule: #  on every minute, TODO: rm
+    - cron: '*/1 * * * *' 
+  pull_request:
+    branches: [ "main" ]
+
+#
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with: # fetch only public/ folder 
+          sparse-checkout: |
+            public
