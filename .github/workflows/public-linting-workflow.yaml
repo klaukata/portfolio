@@ -1,7 +1,7 @@
 name: Frontend Linting Workflow
 
 on:  
-  # every push, included 4 testing, TODO: rm
+  # every push
   push:
     branches:
       - '*'
