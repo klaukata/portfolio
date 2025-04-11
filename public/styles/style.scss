@@ -1,193 +1,238 @@
-$violetColor: #ABA2E6;
-$redColor: #C36761;
-$darkGreenColor: #9DA4AC;
-$grayColor: #8F7E7C;
-$orangeColor: #BA5514;
-$yellowColor: #DACB0C;
-$greenColor: #7BF1A8;
+$violetColor: #aba2e6;
+$redColor: #c36761;
+$darkGreenColor: #9da4ac;
+$grayColor: #8f7e7c;
+$orangeColor: #ba5514;
+$yellowColor: #dacb0c;
+$greenColor: #7bf1a8;
 
 $breakpointSM: 576px;
 $breakpointMD: 768px;
 $breakpointLG: 992px;
 
-.violet { color: $violetColor};
-.red {color: $redColor};
-.darkGreen {color: $darkGreenColor};
-.gray {color: $grayColor};
-.orange {color: $orangeColor};
-.yellow {color: $yellowColor};
-.green {color: $greenColor};
+.violet {
+  color: $violetColor;
+}
+.red {
+  color: $redColor;
+}
+.darkGreen {
+  color: $darkGreenColor;
+}
+.gray {
+  color: $grayColor;
+}
+.orange {
+  color: $orangeColor;
+}
+.yellow {
+  color: $yellowColor;
+}
+.green {
+  color: $greenColor;
+}
 
-.underline {text-decoration: underline};
+.underline {
+  text-decoration: underline;
+}
 
 body {
-    background-color: #1e1e24 !important;
-    font-family: 'IBM Plex Mono', monospace;
-    color: #DECBC9;
-    margin: 0.5em 1em;
+  background-color: #1e1e24 !important;
+  font-family: "IBM Plex Mono", monospace;
+  color: #decbc9;
+  margin: 0.5em 1em;
 }
 
 h2 {
-    font-size: 1.5em;
-    padding-bottom: 0.3em;
-};
+  font-size: 1.5em;
+  padding-bottom: 0.3em;
+}
 
-p,li {line-height: 1.25em};
+p,
+li {
+  line-height: 1.25em;
+}
 
 img {
-    max-width: 60%;
-    height: auto;
-    padding: 0 !important;
-};
+  max-width: 60%;
+  height: auto;
+  padding: 0 !important;
+}
 
 img.project-img {
-    max-width: 100%;
+  max-width: 100%;
 }
-a { text-decoration: none};
-a:hover {transition: linear 0.1s};
-a.violet:hover {color: #8d85c3};
-a.orange:hover {color: #ff6200};
-a.red:hover {color: #f76f65};
-a.green:hover {color: #29ee75};
-a.darkGreen:hover {color: #727d88};
-a.gray:hover {color: #b6a9a8};
+a {
+  text-decoration: none;
+}
+a:hover {
+  transition: linear 0.1s;
+}
+a.violet:hover {
+  color: #8d85c3;
+}
+a.orange:hover {
+  color: #ff6200;
+}
+a.red:hover {
+  color: #f76f65;
+}
+a.green:hover {
+  color: #29ee75;
+}
+a.darkGreen:hover {
+  color: #727d88;
+}
+a.gray:hover {
+  color: #b6a9a8;
+}
 
 div.scroll-section {
-    height: 100vh !important;
-    div#scroll-down-animation {
-        position: absolute;
-        top: 90%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        .mouse {
-            margin: 0 auto;
-            display: block;
-            border-radius: 50px;
-            border: 2px solid $grayColor;
-            height: 100px;
-            width: 50px;
-            position: relative;
-        }
-        .move {
-            position: absolute;
-            background-color: $grayColor;
-            height: 10px;
-            width: 10px;
-            border-radius: 50%;
-            left: 50%;
-            transform: translateX(-50%);
-            animation: move 2s linear infinite;
-          }
+  height: 100vh !important;
+  div#scroll-down-animation {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .mouse {
+      margin: 0 auto;
+      display: block;
+      border-radius: 50px;
+      border: 2px solid $grayColor;
+      height: 100px;
+      width: 50px;
+      position: relative;
     }
-
+    .move {
+      position: absolute;
+      background-color: $grayColor;
+      height: 10px;
+      width: 10px;
+      border-radius: 50%;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: move 2s linear infinite;
+    }
+  }
 }
-div#welcome-section {min-height: 100vh}
-
+div#welcome-section {
+  min-height: 100vh;
+}
 
 // my projects section
 div#skills-div {
-    h5 {
-        font-size: 1.1em;
+  h5 {
+    font-size: 1.1em;
+  }
+  ul {
+    padding-left: 0;
+    li {
+      display: inline;
     }
-    ul {
-        padding-left: 0;
-        li {
-            display: inline;
-        }
-    }  
+  }
 }
 
 div#projects {
-    padding: 2em 0 !important;
+  padding: 2em 0 !important;
+  div {
+    margin-bottom: 4em;
     div {
-        margin-bottom: 4em;
-        div {
-            display: flex;
-            flex-direction: column;
-            justify-content: end;
-            margin-bottom: 0;
-            p {margin-bottom: .3em;}
-        }
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      margin-bottom: 0;
+      p {
+        margin-bottom: 0.3em;
+      }
     }
-    li.filter-button:hover {cursor: pointer;}
-    div#project-list {
-        margin-top: 2em;
-        div.project-item {
-            border: .1px rgba(255, 255, 255, 0.4) solid;
-            border-radius: 10px;
-            padding: 1.5em 1em;
-            margin-bottom: 2em;
-            h2 {margin-bottom: 0;}
-            a {font-weight:bold}
-        }    
+  }
+  li.filter-button:hover {
+    cursor: pointer;
+  }
+  div#project-list {
+    margin-top: 2em;
+    div.project-item {
+      border: 0.1px rgba(255, 255, 255, 0.4) solid;
+      border-radius: 10px;
+      padding: 1.5em 1em;
+      margin-bottom: 2em;
+      h2 {
+        margin-bottom: 0;
+      }
+      a {
+        font-weight: bold;
+      }
     }
-    
+  }
 }
 
-div#about-section, div#contact-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-    div#contact-section {align-items: center;}
+div#about-section,
+div#contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  div#contact-section {
+    align-items: center;
+  }
 }
 
 @media (min-width: 400px) {
-    body {
-        margin: 0.5em 3em;
-    }
+  body {
+    margin: 0.5em 3em;
+  }
 }
 
 @media (min-width: $breakpointSM) {
-    html {
-        display: table;
-        margin: auto;
-    }
-    body {
-        margin: 0;
-        max-width: 30em;
-    }
+  html {
+    display: table;
+    margin: auto;
+  }
+  body {
+    margin: 0;
+    max-width: 30em;
+  }
 }
 
 @media (max-width: $breakpointMD) {
-    section#projects {
-        a.orange {
-            margin-bottom: 0.5em;
-        }
+  section#projects {
+    a.orange {
+      margin-bottom: 0.5em;
     }
+  }
 }
 
 @media (min-width: $breakpointMD) {
-    body {
-        max-width: 35em;
+  body {
+    max-width: 35em;
+  }
+  section#projects {
+    div.reverse {
+      display: flex;
+      flex-direction: row-reverse;
     }
-    section#projects {
-        div.reverse {
-            display: flex;
-            flex-direction: row-reverse;
-        }
-    }
+  }
 }
 
 @media (min-width: $breakpointLG) {
-    body {
-        max-width: 40em;
-    }
+  body {
+    max-width: 40em;
+  }
 }
 
 @keyframes move {
-    0% {
-      transform: translate(-50%,10px);
-      opacity: 0;
-    }
-    50% {
-      transform: translate(-50%,40px);
-      opacity: 1;
-    }
-    100% {
-      transform: translate(-50%,80px);
-      opacity: 0;
-    }
+  0% {
+    transform: translate(-50%, 10px);
+    opacity: 0;
+  }
+  50% {
+    transform: translate(-50%, 40px);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, 80px);
+    opacity: 0;
+  }
 }
 
 // subpages
