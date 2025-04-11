@@ -5,18 +5,22 @@ on:
   push:
     branches:
       - '*'
-  # on every pull req to a main branch...
+  # on every PR to the main branch
   pull_request:
     branches: 
       - 'main'
 
-#
 jobs:
   lint-job:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout /public
+      - name: Checkout /public folder
         uses: actions/checkout@v4
-        with: # fetch only public/ folder 
+        with:
           sparse-checkout: |
             public
+      - name: Prettify Code
+        uses: creyD/prettier_action@v4.3
+        with:
+          # check the formatting (fail if something is off, don't modify files) 
+          prettier_options: --check .   
