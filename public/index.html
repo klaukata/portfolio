@@ -1,162 +1,295 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Who am I? Check out for yourself">
-    <meta name="authors" content="Klaudia Borowy">
-    <meta name="keywords" content="portfolio, personal website, frontend developer">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Who am I? Check out for yourself" />
+    <meta name="authors" content="Klaudia Borowy" />
+    <meta
+      name="keywords"
+      content="portfolio, personal website, frontend developer"
+    />
     <title>Personal Website - Klaudia Borowy</title>
     <!-- font -->
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap"
+      rel="stylesheet"
+    />
     <!-- bootstrap -->
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" type="text/css">
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      type="text/css"
+    />
     <!-- stylesheets -->
-    <link rel="stylesheet" href="styles/bg-animation.css">
-    <link rel="stylesheet" href="styles/style.css">
-    
+    <link rel="stylesheet" href="styles/bg-animation.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+
     <!-- icon -->
-    <link rel="icon" href="img/berry-icon.png">
-</head>
-<body class="mb-5">
+    <link rel="icon" href="img/berry-icon.png" />
+  </head>
+  <body class="mb-5">
     <div class="bg-animation">
-        <div id="stars"></div>
-        <div id="stars2"></div>
-        <div id="stars3"></div>
-        <div id="stars4"></div>
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+      <div id="stars4"></div>
     </div>
     <!-- welcome section -->
-    <div class="scroll-section text-center d-flex flex-column justify-content-center" id="welcome-section">
-        <h1 class="gray" id="main-h1">
-            <span id="simulateTyping"></span> &#128640;
-        </h1>
-        <p class="lh-sm">my name is <span class="violet">klaudia borowy</span><br><span class="gray">
-            and</span><br>i code sometimes
-        </p>
-        <!-- <p>view my cv <a href="files/KlaudiaBorowyResume.pdf" class="green" target="_blank">here!</a></p> -->
-        <div id="scroll-down-animation">
-            <span class="mouse">
-              <span class="move"></span>
-            </span>
-          </div>
+    <div
+      class="scroll-section text-center d-flex flex-column justify-content-center"
+      id="welcome-section"
+    >
+      <h1 class="gray" id="main-h1">
+        <span id="simulateTyping"></span> &#128640;
+      </h1>
+      <p class="lh-sm">
+        my name is <span class="violet">klaudia borowy</span><br /><span
+          class="gray"
+        >
+          and</span
+        ><br />i code sometimes
+      </p>
+      <!-- <p>view my cv <a href="files/KlaudiaBorowyResume.pdf" class="green" target="_blank">here!</a></p> -->
+      <div id="scroll-down-animation">
+        <span class="mouse">
+          <span class="move"></span>
+        </span>
+      </div>
     </div>
     <!-- portfolio section -->
     <div class="scroll-section portfolio container" id="projects">
-        <h2 class="mb-1">my projects</h2>
-        <p>click on a specific shield in order to display projects that use that technology!</p>
-        <div class="container py-1" id="skills-div">
-            <div class="row">
-                <ul>
-                    <li class='filter-button' data-filter="all">
-                        <img src="https://img.shields.io/badge/all%20projects-808080" alt="">
-                    </li>
-                    <li class='filter-button' data-filter="airflow">
-                        <img src="https://img.shields.io/badge/-Airflow-017CEE?style=flat&logo=apacheairflow&logoColor=white" alt="">
-                    </li>
-                    <li class='filter-button' data-filter="aws">
-                        <img src="https://img.shields.io/badge/-AWS-232F3E?style=flat&logo=amazonwebservices&logoColor=white" alt="">
-                    </li>
-                    <li class='filter-button' data-filter="dbt">
-                        <img src="https://img.shields.io/badge/-dbt-FF694B?style=flat&logo=dbt&logoColor=white" alt="">
-                    </li>
-                    <li class='filter-button' data-filter="docker">
-                        <img src="https://img.shields.io/badge/-Docker-2496ED?style=flat&logo=docker&logoColor=white" alt="">
-                    </li>
-                    <li class='filter-button' data-filter="fastapi">
-                        <img src="https://img.shields.io/badge/-Fast%20API-009688?style=flat&logo=fastapi&logoColor=white" alt="">
-                    </li>
-                    <li class='filter-button' data-filter="jupyter">
-                        <img src="https://img.shields.io/badge/-Jupyter-F47424?style=flat&logo=jupyter&logoColor=white" alt="">
-                    </li>
-                    <li class='filter-button' data-filter="linux">
-                        <img src="https://img.shields.io/badge/-Linux-FCC624?style=flat&logo=linux&logoColor=black" alt="">
-                    </li>
-                    <li class='filter-button' data-filter="mongodb">
-                        <img src="https://img.shields.io/badge/-MongoDB-47A248?style=flat&logo=mongodb&logoColor=white" alt="">
-                    </li>
-                    <li class='filter-button' data-filter="pandas">
-                        <img src="https://img.shields.io/badge/-Pandas-0C0454?style=flat&logo=pandas&logoColor=white" alt="">
-                    </li>
-                    <li class='filter-button' data-filter="powerbi">
-                        <img src="https://img.shields.io/badge/-Power%20Bi-f6d958?style=flat&logo=powerbi&logoColor=black" alt="">
-                    </li>
-                    <li class='filter-button' data-filter="python">
-                        <img src="https://img.shields.io/badge/-Python-4584b6?style=flat&logo=python&logoColor=white" alt="">
-                    </li>
-                    <li class='filter-button' data-filter="snowflake">
-                        <img src="https://img.shields.io/badge/-Snowflake-29B5E8?style=flat&logo=snowflake&logoColor=white" alt="">
-                    </li>
-                    <li class='filter-button' data-filter="sql">
-                        <img src="https://img.shields.io/badge/-SQL-grey?style=flat&logo=&logoColor=white" alt="">
-                    </li>
-                    <li class='filter-button' data-filter="terraform">
-                        <img src="https://img.shields.io/badge/-Terraform-844FBA?style=flat&logo=terraform&logoColor=white" alt="">
-                    </li>
-                </ul>
-            </div>
-            <div class="row" id="project-list">
-                <div class="project-item airflow aws dbt docker linux powerbi python pandas snowflake sql terraform">
-                    <h2>ELT Pipeline: Tennis Statistics</h2>
-                    <p>stack: <i>python, sql, aws, snowflake, dbt, terraform, airflow, docker, power bi, linux terminal</i></p>
-                    <p>python packages: <i>selenium (scraping), beautifulsoup (html manipulation), pandas (data manipulation), pydantic (validation), pytest (testing) </i></p>
-                    <a href="https://github.com/klaukata/TennisPipeline" class="red" target="_blank" rel="noopener noreferrer">>>> GITHUB REPO</a>
-                </div>
-                <div class="project-item python fastapi mongodb docker">
-                    <h2>RESTful API database: Tasknado</h2>
-                    <p>stack: <i>python, fasapi, mongodb, jwt, pydandic, uvicorn, docker</i></p>
-                    <a href="https://github.com/klaukata/tasknado" class="red" target="_blank" rel="noopener noreferrer">>>> GITHUB REPO</a>
-                </div>
-                <div class="project-item python pandas jupyter">
-                    <h2>Data Cleaning: London Bike Sharing</h2>
-                    <p>stack: <i>python, pandas, jupyter</i></p>
-                    <a href="https://github.com/klaukata/BikeSharing" class="red" target="_blank" rel="noopener noreferrer">>>> GITHUB REPO</a>
-                </div>
-                <div class="project-item powerbi">
-                    <h2>Vizualization: AdventureWork</h2>
-                    <p>stack: <i>power bi</i></p>
-                    <a href="https://github.com/klaukata/visualization-AdventureWorks" class="red" target="_blank" rel="noopener noreferrer">>>> GITHUB REPO</a>
-                </div>
-            </div>
+      <h2 class="mb-1">my projects</h2>
+      <p>
+        click on a specific shield in order to display projects that use that
+        technology!
+      </p>
+      <div class="container py-1" id="skills-div">
+        <div class="row">
+          <ul>
+            <li class="filter-button" data-filter="all">
+              <img
+                src="https://img.shields.io/badge/all%20projects-808080"
+                alt=""
+              />
+            </li>
+            <li class="filter-button" data-filter="airflow">
+              <img
+                src="https://img.shields.io/badge/-Airflow-017CEE?style=flat&logo=apacheairflow&logoColor=white"
+                alt=""
+              />
+            </li>
+            <li class="filter-button" data-filter="aws">
+              <img
+                src="https://img.shields.io/badge/-AWS-232F3E?style=flat&logo=amazonwebservices&logoColor=white"
+                alt=""
+              />
+            </li>
+            <li class="filter-button" data-filter="dbt">
+              <img
+                src="https://img.shields.io/badge/-dbt-FF694B?style=flat&logo=dbt&logoColor=white"
+                alt=""
+              />
+            </li>
+            <li class="filter-button" data-filter="docker">
+              <img
+                src="https://img.shields.io/badge/-Docker-2496ED?style=flat&logo=docker&logoColor=white"
+                alt=""
+              />
+            </li>
+            <li class="filter-button" data-filter="fastapi">
+              <img
+                src="https://img.shields.io/badge/-Fast%20API-009688?style=flat&logo=fastapi&logoColor=white"
+                alt=""
+              />
+            </li>
+            <li class="filter-button" data-filter="jupyter">
+              <img
+                src="https://img.shields.io/badge/-Jupyter-F47424?style=flat&logo=jupyter&logoColor=white"
+                alt=""
+              />
+            </li>
+            <li class="filter-button" data-filter="linux">
+              <img
+                src="https://img.shields.io/badge/-Linux-FCC624?style=flat&logo=linux&logoColor=black"
+                alt=""
+              />
+            </li>
+            <li class="filter-button" data-filter="mongodb">
+              <img
+                src="https://img.shields.io/badge/-MongoDB-47A248?style=flat&logo=mongodb&logoColor=white"
+                alt=""
+              />
+            </li>
+            <li class="filter-button" data-filter="pandas">
+              <img
+                src="https://img.shields.io/badge/-Pandas-0C0454?style=flat&logo=pandas&logoColor=white"
+                alt=""
+              />
+            </li>
+            <li class="filter-button" data-filter="powerbi">
+              <img
+                src="https://img.shields.io/badge/-Power%20Bi-f6d958?style=flat&logo=powerbi&logoColor=black"
+                alt=""
+              />
+            </li>
+            <li class="filter-button" data-filter="python">
+              <img
+                src="https://img.shields.io/badge/-Python-4584b6?style=flat&logo=python&logoColor=white"
+                alt=""
+              />
+            </li>
+            <li class="filter-button" data-filter="snowflake">
+              <img
+                src="https://img.shields.io/badge/-Snowflake-29B5E8?style=flat&logo=snowflake&logoColor=white"
+                alt=""
+              />
+            </li>
+            <li class="filter-button" data-filter="sql">
+              <img
+                src="https://img.shields.io/badge/-SQL-grey?style=flat&logo=&logoColor=white"
+                alt=""
+              />
+            </li>
+            <li class="filter-button" data-filter="terraform">
+              <img
+                src="https://img.shields.io/badge/-Terraform-844FBA?style=flat&logo=terraform&logoColor=white"
+                alt=""
+              />
+            </li>
+          </ul>
         </div>
+        <div class="row" id="project-list">
+          <div
+            class="project-item airflow aws dbt docker linux powerbi python pandas snowflake sql terraform"
+          >
+            <h2>ELT Pipeline: Tennis Statistics</h2>
+            <p>
+              stack:
+              <i
+                >python, sql, aws, snowflake, dbt, terraform, airflow, docker,
+                power bi, linux terminal</i
+              >
+            </p>
+            <p>
+              python packages:
+              <i
+                >selenium (scraping), beautifulsoup (html manipulation), pandas
+                (data manipulation), pydantic (validation), pytest (testing)
+              </i>
+            </p>
+            <a
+              href="https://github.com/klaukata/TennisPipeline"
+              class="red"
+              target="_blank"
+              rel="noopener noreferrer"
+              >>>> GITHUB REPO</a
+            >
+          </div>
+          <div class="project-item python fastapi mongodb docker">
+            <h2>RESTful API database: Tasknado</h2>
+            <p>
+              stack:
+              <i>python, fasapi, mongodb, jwt, pydandic, uvicorn, docker</i>
+            </p>
+            <a
+              href="https://github.com/klaukata/tasknado"
+              class="red"
+              target="_blank"
+              rel="noopener noreferrer"
+              >>>> GITHUB REPO</a
+            >
+          </div>
+          <div class="project-item python pandas jupyter">
+            <h2>Data Cleaning: London Bike Sharing</h2>
+            <p>stack: <i>python, pandas, jupyter</i></p>
+            <a
+              href="https://github.com/klaukata/BikeSharing"
+              class="red"
+              target="_blank"
+              rel="noopener noreferrer"
+              >>>> GITHUB REPO</a
+            >
+          </div>
+          <div class="project-item powerbi">
+            <h2>Vizualization: AdventureWork</h2>
+            <p>stack: <i>power bi</i></p>
+            <a
+              href="https://github.com/klaukata/visualization-AdventureWorks"
+              class="red"
+              target="_blank"
+              rel="noopener noreferrer"
+              >>>> GITHUB REPO</a
+            >
+          </div>
+        </div>
+      </div>
     </div>
-
 
     <!-- about me section -->
     <div class="scroll-section about-me" id="about-section">
-        <h2>about me</h2>
-        <p>on the internet, i go by <span class="violet">klaukata</span>
-            <span class="gray"> [both "klau" and "kata" are the first four letters of my first and middle name, respectively]</span>
-        </p>
-        <p>
-            at first, I was fascinated by frontend development, where I developed the skills that enabled me to create this website. 
-            however, after a while, I yearned for more challenging and <span class="red">stimulating</span> work
-        </p>
-        <p>
-            i'm at the beginning of my data-driven career, and so far, i have discovered a passion for data manipulation.
-            i enjoy the problem-solving aspect of data engineering and the satisfaction of turning raw data into actionable insights
-        </p>
-        <p>also:</p>
-        <p>&#128105;&#8205;&#128187; i'm in my <span class="darkGreen">second year</span> of studying computer science at
-        university of information technology and management in rzeszow</p>
-        <p>&#127748; when i’m not working on my next project, i like to spend time 
-            reading non-fiction, exploring the world, and working on those gains
-        </p>
+      <h2>about me</h2>
+      <p>
+        on the internet, i go by <span class="violet">klaukata</span>
+        <span class="gray">
+          [both "klau" and "kata" are the first four letters of my first and
+          middle name, respectively]</span
+        >
+      </p>
+      <p>
+        at first, I was fascinated by frontend development, where I developed
+        the skills that enabled me to create this website. however, after a
+        while, I yearned for more challenging and
+        <span class="red">stimulating</span> work
+      </p>
+      <p>
+        i'm at the beginning of my data-driven career, and so far, i have
+        discovered a passion for data manipulation. i enjoy the problem-solving
+        aspect of data engineering and the satisfaction of turning raw data into
+        actionable insights
+      </p>
+      <p>also:</p>
+      <p>
+        &#128105;&#8205;&#128187; i'm in my
+        <span class="darkGreen">second year</span> of studying computer science
+        at university of information technology and management in rzeszow
+      </p>
+      <p>
+        &#127748; when i’m not working on my next project, i like to spend time
+        reading non-fiction, exploring the world, and working on those gains
+      </p>
     </div>
     <!-- contact me section -->
     <div class="scroll-section contact" id="contact-section">
-        <h2>contact me</h2>
-        <p>you can email me at <a class="green" href="mailto:kkborowy@gmail.com">
-            kkborowy@gmail.com</a>
-        </p>
-        <p class="mt-4 text-center">
-            <a class="darkGreen" href="https://www.instagram.com/klaukata/" target="_blank">instagram </a>|
-            <a class="darkGreen" href="https://github.com/klaukata" target="_blank"> github </a>|
-            <a class="darkGreen" href="https://www.linkedin.com/in/kkborowy/" target="_blank"> linkedin</a>
-        </p>
+      <h2>contact me</h2>
+      <p>
+        you can email me at
+        <a class="green" href="mailto:kkborowy@gmail.com">
+          kkborowy@gmail.com</a
+        >
+      </p>
+      <p class="mt-4 text-center">
+        <a
+          class="darkGreen"
+          href="https://www.instagram.com/klaukata/"
+          target="_blank"
+          >instagram </a
+        >|
+        <a class="darkGreen" href="https://github.com/klaukata" target="_blank">
+          github </a
+        >|
+        <a
+          class="darkGreen"
+          href="https://www.linkedin.com/in/kkborowy/"
+          target="_blank"
+        >
+          linkedin</a
+        >
+      </p>
     </div>
     <script src="scripts/scroll.js"></script>
     <script src="scripts/typing_simulation.js"></script>
     <script src="scripts/project-filtering.js"></script>
-</body>
+  </body>
 </html>

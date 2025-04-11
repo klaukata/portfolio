@@ -1,21 +1,21 @@
-document.addEventListener('DOMContentLoaded', () => {
-    let scrollPosition = 0;
+document.addEventListener("DOMContentLoaded", () => {
+  let scrollPosition = 0;
 
-    window.addEventListener('wheel', (e) => {
-        e.preventDefault();
+  window.addEventListener("wheel", (e) => {
+    e.preventDefault();
 
-        const viewportHeight = window.innerHeight;
-        const maxScroll = document.documentElement.scrollHeight - viewportHeight;
+    const viewportHeight = window.innerHeight;
+    const maxScroll = document.documentElement.scrollHeight - viewportHeight;
 
-        if (e.deltaY > 0) {
-            scrollPosition = Math.min(scrollPosition + viewportHeight, maxScroll);
-        } else if (e.deltaY < 0) {
-            scrollPosition = Math.max(scrollPosition - viewportHeight, 0);
-        }
+    if (e.deltaY > 0) {
+      scrollPosition = Math.min(scrollPosition + viewportHeight, maxScroll);
+    } else if (e.deltaY < 0) {
+      scrollPosition = Math.max(scrollPosition - viewportHeight, 0);
+    }
 
-        window.scrollTo({
-            top: scrollPosition,
-            behavior: 'smooth'
-        });
+    window.scrollTo({
+      top: scrollPosition,
+      behavior: "smooth",
     });
+  });
 });
