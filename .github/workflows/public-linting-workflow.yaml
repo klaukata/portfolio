@@ -23,4 +23,4 @@ jobs:
         uses: creyD/prettier_action@v4.3
         with:
           # check the formatting (fail if something is off, don't modify files) 
-          prettier_options: --check .   
+          prettier_options: --write .   
