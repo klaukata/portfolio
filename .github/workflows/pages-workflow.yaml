@@ -19,26 +19,18 @@ jobs:
         with:
           sparse-checkout: |
             public
-
-
         # enable Pages
       - name: Setup Pages
         uses: actions/configure-pages@v5
-
-      # - name: Build static files
-      #   id: ...
-      #   run: |
-      #     ...
-
+        # package and upload a /public folder as an artifact that can be deployed
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with: 
           path: ./public
-  # deploy an artifact
+  # publish an artifact
   deploy:
     needs: build
     runs-on: ubuntu-latest
     steps:
       - name: Deploy to Pages
-        id: dep #?
         uses: actions/deploy-pages@v4

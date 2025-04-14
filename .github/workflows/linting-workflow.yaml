@@ -1,7 +1,7 @@
 name: Linting Workflow
 
 on:  
-  # every push
+  # on every push
   push:
     branches:
       - '*'
